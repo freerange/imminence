@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 source 'https://BnrJb6FZyzspBboNJzYZ@gem.fury.io/govuk/'
 
 gem 'plek', '1.3.1'
@@ -19,7 +19,7 @@ gem 'formtastic-bootstrap', git: 'https://github.com/cgunther/formtastic-bootstr
 gem 'jquery-rails'
 gem 'less-rails-bootstrap'
 
-gem 'gds-api-adapters', '4.1.3'
+gem 'gds-api-adapters', '5.1.0'
 gem 'govuk_content_models', '4.0.0'
 gem 'statsd-ruby', '1.0.0', :require => 'statsd'
 
