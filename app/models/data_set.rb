@@ -23,6 +23,13 @@ class DataSet
     Place.find_near(location, distance, limit, {service_slug: service.slug, data_set_version: version})
   end
 
+  # If we were on MongoDB 2.2+ (and definitely 2.4) we'd use $geoWithin here
+  def places_within(geo_json)
+    coordinates = geo_json['coordinates'][0]
+    Place.where(location: {'$within' => { '$polygon' => coordinates } },
+      service_slug: service.slug, data_set_version: version)
+  end
+
   def duplicate
     duplicated_data_set = self.service.data_sets.create(:change_notes => "Created from Version #{self.version}")
     self.places.each do |place|
