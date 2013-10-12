@@ -7,12 +7,12 @@ def find_or_initialize_facets(klass, facet_names)
 end
 
 # BusinessSupportBusinessType
-find_or_initialize_facets(BusinessSupport::BusinessType, 
-                         {"private-company"         => "Private Company", 
-                          "public-limited-company"  => "Public limited company", 
-                          "partnership"             => "Partnership", 
-                          "social-enterprise"       => "Social enterprise", 
-                          "charity"                 => "Charity", 
+find_or_initialize_facets(BusinessSupport::BusinessType,
+                         {"private-company"         => "Private Company",
+                          "public-limited-company"  => "Public limited company",
+                          "partnership"             => "Partnership",
+                          "social-enterprise"       => "Social enterprise",
+                          "charity"                 => "Charity",
                           "sole-trader"             => "Sole trader"})
 
 # BusinessSupportBusinessSize
@@ -24,7 +24,7 @@ find_or_initialize_facets(BusinessSupport::BusinessSize,
                           "over-1000"            => "Over 1000"})
 # BusinessSupportLocation
 find_or_initialize_facets(BusinessSupport::Location,
-                          { "northern-ireland" => "Northern Ireland", 
+                          { "northern-ireland" => "Northern Ireland",
                             "england"          => "England",
                             "london" => "London",
                             "north-east" => "North East (England)",
@@ -35,18 +35,18 @@ find_or_initialize_facets(BusinessSupport::Location,
                             "south-west" => "South West (England)",
                             "east-of-england" => "East of England",
                             "south-east" => "South East (England)",
-                            "wales"            => "Wales", 
+                            "wales"            => "Wales",
                             "scotland"         => "Scotland"})
 
 # BusinessSupportSector
 find_or_initialize_facets(BusinessSupport::Sector,
-                          {"wholesale-and-retail" => "Wholesale and Retail", 
-                           "manufacturing" => "Manufacturing", 
-                           "hospitality-and-catering" => "Hospitality and Catering", 
+                          {"wholesale-and-retail" => "Wholesale and Retail",
+                           "manufacturing" => "Manufacturing",
+                           "hospitality-and-catering" => "Hospitality and Catering",
                            "travel-and-leisure" => "Travel and Leisure",
-                           "agriculture" => "Agriculture", 
-                           "construction" => "Construction", 
-                           "information-communication-and-media" => "Information, Communication and Media", 
+                           "agriculture" => "Agriculture",
+                           "construction" => "Construction",
+                           "information-communication-and-media" => "Information, Communication and Media",
                            "science-and-technology" => "Science and Technology",
                            "transport-and-distribution" => "Transport and Distribution",
                            "utilities" => "Utilities",
